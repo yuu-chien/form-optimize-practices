@@ -115,6 +115,9 @@ textarea {
   font-family: inherit;
   line-height: inherit;
   border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 button::-webkit-input-placeholder,
@@ -205,12 +208,6 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
-}
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-  -webkit-appearance: none;
 }
 
 [type="search"] {

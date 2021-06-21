@@ -161,9 +161,9 @@ textarea {
         color: #979797;
     }
 
-    // -webkit-appearance: none;
-    // -moz-appearance: none;
-    // appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
     // &:focus {
     //     outline: 0;
@@ -248,11 +248,11 @@ button:-moz-focusring,
 }
 
 // Correct the cursor style of increment and decrement buttons in Chrome.
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-    height: auto;
-    -webkit-appearance: none;
-}
+// [type="number"]::-webkit-inner-spin-button,
+// [type="number"]::-webkit-outer-spin-button {
+//     height: auto;
+//     -webkit-appearance: none;
+// }
 
 // 1. Correct the outline style in Safari.
 // 2. This overrides the extra rounded corners on search inputs in iOS so that our
