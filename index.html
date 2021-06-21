@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>Form optimize practices</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h1>Type 定義 &lt;input> 顯示的樣子</h1>
+                </div>
+            </div>
+            <br>
+            <!-- checkbox -->
+            <div class="c-form">
+                <div class="c-form__tit">
+                    <div>Checkbox - 複選</div>
+                </div>
+                <div class="c-form__cnt">
+                    <div class="c-checkBox">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="MON" class="c-checkBox__inp">
+                        <label for="vehicle1" class="c-checkBox__lbl">MON</label>
+                    </div>
+                    <div class="c-checkBox">
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="TUE" class="c-checkBox__inp">
+                        <label for="vehicle2" class="c-checkBox__lbl">TUE</label>
+                    </div>
+                    <div class="c-checkBox">
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="WEN" class="c-checkBox__inp">
+                        <label for="vehicle3" class="c-checkBox__lbl">WEN</label>
+                    </div>
+                    <div class="c-checkBox">
+                        <input type="checkbox" id="vehicle4" name="vehicle4" value="THU" class="c-checkBox__inp">
+                        <label for="vehicle4" class="c-checkBox__lbl">THU</label>
+                    </div>
+                    <div class="c-checkBox">
+                        <input type="checkbox" id="vehicle5" name="vehicle5" value="FRI" class="c-checkBox__inp">
+                        <label for="vehicle5" class="c-checkBox__lbl">FRI</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Radio -->
+            <div class="c-form">
+                <div class="c-form__tit">
+                    <div>Radio - 單選</div>
+                </div>
+                <div class="c-form__cnt">
+                    <div class="c-radioBox">
+                        <input type="radio" id="male" name="gender" value="male" class="c-radioBox__inp">
+                        <label for="male" class="c-radioBox__lbl">Male</label>
+                    </div>
+                    <div class="c-radioBox">
+                        <input type="radio" id="female" name="gender" value="female" class="c-radioBox__inp">
+                        <label for="female" class="c-radioBox__lbl">Female</label>
+                    </div>
+                    <div class="c-radioBox">
+                        <input type="radio" id="other" name="gender" value="other" class="c-radioBox__inp">
+                        <label for="other" class="c-radioBox__lbl">Other</label>
+                    </div>
+                </div>
+            </div>
+            <!-- 下拉選單 -->
+            <div class="c-form">
+                <div class="c-form__tit">
+                    <div>select - 下拉選單</div>
+                </div>
+                <div class="c-form__cnt">
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                    </select>
+                </div>
+            </div>
+            <!-- input -->
+            <div class="c-form">
+                <div class="c-form__tit">
+                    <label for="text">input - 文字輸入框</label>
+                </div>
+                <div class="c-form__cnt">
+                    <input type="text" name="text" id="text" class="o-inpbox">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
