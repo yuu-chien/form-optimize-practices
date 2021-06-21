@@ -1,0 +1,10 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            // 轉譯成什麼檔案            
+            "extensionName": ".min.css",
+            // 轉譯後的路徑            
+            "savePath": "/content/css/"
+        }
+    ],
+}

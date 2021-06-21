@@ -1,0 +1,26 @@
+.o-btn {
+    box-sizing: border-box;
+    display: block;
+    width: 120px;
+    padding: 8px 12px;
+    color: #fff;
+    text-align: center;
+    background: #e2492f;
+    border-radius: 6px;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+
+    &--gy {
+        color: #212529;
+        background: #dfdbdb;
+    }
+
+    &:hover {
+        background: #e34b31cc;
+    }
+}
+
+.l-btn {
+    margin-top: 8px;
+}
