@@ -115,9 +115,6 @@ textarea {
   font-family: inherit;
   line-height: inherit;
   border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 button::-webkit-input-placeholder,

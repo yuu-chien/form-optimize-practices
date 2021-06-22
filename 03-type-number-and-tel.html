@@ -14,7 +14,7 @@
         <div class="l-container__cnt">
             <div class="l-header">
                 <div class="l-header__cnt">
-                    <h1>type="number"</h1>
+                    <h2>type="number"</h2>
                 </div>
             </div>
             <!-- 一般 -->
@@ -81,7 +81,48 @@
                         </div>
                     </div>
                     <div class="c-form__cnt">
-                        <input type="number" name="number_point" id="number_point" class="o-inpbox" step="0.01" placeholder="小數點後兩位">
+                        <input type="number" name="number_point" id="number_point" class="o-inpbox" step="0.01" placeholder="小數點後兩位為例">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="tel"</h2>
+                </div>
+            </div>
+            <!-- Tel -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="phone">一般</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="tel"></span>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="tel" id="phone" name="phone" class="o-inpbox">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- pattern 協助驗證 -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="phone_pattern">pattern 協助驗證</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="tel" pattern=""></span>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="tel" id="phone_pattern" name="phone_pattern" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="o-inpbox">
                     </div>
                 </div>
                 <div class="l-btn">
