@@ -92,7 +92,27 @@
                 </div>
             </form>
             <br>
-            <!-- File -->
+            <!-- Date & Time to min or max -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="datetime_min">日期與時間</label>
+                        <div class="o-hint">能以此限制可選擇的日期與時間區間</div>
+                        <div class="o-hint">這個範例為 2021-06-23 00:00 至 2021-06-30 23:59</div>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="datetime-local" min="" max=""></span>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="datetime-local" id="datetime_min" name="datetime_min" class="o-inpbox" min="2021-06-23T00:00" max="2021-06-30T23:59">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 上傳檔案 -->
             <form action="/action_page.php">
                 <div class="c-form">
                     <div class="c-form__tit">
@@ -103,6 +123,37 @@
                     </div>
                     <div class="c-form__cnt">
                         <input type="file" id="file_demo" name="file_demo" class="o-inpbox">
+                    </div>
+                </div>
+            </form>
+            <br>
+            <!-- 上傳多個檔案 -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="file_demo_multiple">上傳多個檔案</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="file" multiple></span>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="file" id="file_demo_multiple" name="file_demo_multiple" class="o-inpbox" multiple>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <!-- 指定上傳檔案的類型 -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="file_demo_accept">指定上傳檔案的類型</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="file" accept=".png, .jpg, .jpeg"></span>
+                            <div class="o-hint">這個範例為指定 .png 或 .jpg 或 .jpeg 檔案類型</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="file" id="file_demo_accept" name="file_demo_accept" class="o-inpbox" accept=".png, .jpg, .jpeg">
                     </div>
                 </div>
             </form>
