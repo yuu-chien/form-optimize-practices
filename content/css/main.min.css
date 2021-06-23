@@ -431,6 +431,14 @@ textarea::placeholder {
   background-color: #FFF;
 }
 
+.o-textarea {
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+  background-color: #FFF;
+}
+
 .c-form__tit {
   font-weight: bold;
 }

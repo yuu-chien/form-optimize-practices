@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>填寫地址</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h1>填寫地址</h1>
+                </div>
+            </div>
+            <br>
+            <!-- 地址過長或輸入框為固定寬度設計 -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="address_demo">請輸入地址</label>
+                        <div class="l-hint">
+                            <div class="o-hint">此範例的輸入欄位寬為 200px</div>
+                            <div class="o-hint">輸入地址：台中市北屯區大鵬路陳平里12之3巷5之1弄3之2鄰58號6樓之3</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt c-form__cnt--v">
+                        <input type="text" id="address_demo" name="address_demo" class="o-inpbox" value="台中市北屯區大鵬路陳平里12之3巷5之1弄3之2鄰58號6樓之3" style="width: 200px;">
+                        <br>
+                        <textarea name="" id="" style="width: 200px;" class="o-textarea">台中市北屯區大鵬路陳平里12之3巷5之1弄3之2鄰58號6樓之3</textarea>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <!-- 固定欄位填寫普遍共通的地址項目 -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="address_demo2">固定欄位填寫普遍共通的地址項目</label>
+                        <div class="l-hint">
+                            <div class="o-hint">此範例為類型演示，較佳的輸入方式為下拉選單
+                                請參考：<a href="https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208" target="_blank">中華郵政郵遞區號查詢</a>
+                            </div>
+                            <div class="o-hint">固定欄位不應有可能不共通的項目</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="text" id="address_demo2" name="address_demo2" class="o-inpbox" placeholder="縣市">
+                        <input type="text" id="address_demo3" name="address_demo2" class="o-inpbox" placeholder="區鄉鎮">
+                        <input type="text" id="address_demo4" name="address_demo2" class="o-inpbox" placeholder="路">
+                        <input type="text" id="address_demo5" name="address_demo2" class="o-inpbox" placeholder="巷">
+                        <input type="text" id="address_demo5" name="address_demo2" class="o-inpbox" placeholder="弄">
+                        <input type="text" id="address_demo5" name="address_demo2" class="o-inpbox" placeholder="樓">
+                        <input type="text" id="address_demo5" name="address_demo2" class="o-inpbox" placeholder="號">
+                        <input type="text" id="address_demo5" name="address_demo2" class="o-inpbox" placeholder="建築物名稱">
+                    </div>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+</body>
+
+</html>

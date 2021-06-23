@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>通用屬性</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h1>通用屬性</h1>
+                </div>
+            </div>
+            <br>
+            <!-- 必須填寫 required -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="email_req">必須填寫</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="text" required></span>
+                            <div class="o-hint">適用的 input 類型：text、search、url、tel、email、password、date pickers、number、checkbox、radio、file。</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="text" name="email_req" id="email_req" class="o-inpbox" required>
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 最小值與最大值 min max -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="number_min">最小值與最大值</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="number" min="" max=""></span>
+                            <div class="o-hint">適用的 input 類型：number、range、date、datetime、datetime-local、month、time、week</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="number" name="number_min" id="number_min" class="o-inpbox" min="-100" max="100" placeholder="最小值 -100，最大值 100">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 增減區間 step -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="number_step">增減區間</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="number" step=""></span>
+                            <div class="o-hint">適用的 input 類型：number、range、date、datetime、datetime-local、month、time、week</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="number" name="number_step" id="number_step" class="o-inpbox" step="10" placeholder="區間為 10">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 定義至多／至少輸入幾個字元 minlength maxlength -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="psw_length">定義至多／至少輸入幾個字元</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="text" minlength="" maxlength=""></span>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="text" name="psw_length" id="psw_length" class="o-inpbox" minlength="6" maxlength="10" placeholder="至少 6 個字元；至多 10 個字元">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 唯讀 readonly -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="psw_only">唯讀</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="text" readonly></span>
+                            <div class="o-hint">無法修改，使用者仍可用 tab 鍵切換並複製內容。</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="text" name="psw_only" id="psw_only" class="o-inpbox" readonly>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <!-- 禁用 disabled  -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="psw_dis">禁用</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="text" disabled></span>
+                            <div class="o-hint">被禁用的input 元素是無法使用和無法點擊的。</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="text" name="psw_dis" id="psw_dis" class="o-inpbox" disabled>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <!-- 指定輸入模式 inputmode -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="psw_mode">指定輸入模式</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="text" inputmode=""></span>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="text" name="psw_mode" id="psw_mode" class="o-inpbox" inputmode="numeric" placeholder="指定輸入模式為數字">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 可輸入多筆 multiple -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="email_multiple">可輸入多筆</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="email" multiple></span>
+                            <div class="o-hint">以逗號分隔，逗號後可加上空白</div>
+                            <div class="o-hint">使用 multiple 時允許空值</div>
+                            <div class="o-hint">適用的 input 類型：email、file</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="email" name="email_multiple" id="email_multiple" class="o-inpbox" multiple value="me@example.org, you@example.org">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 以字元數定義輸入框尺寸 size -->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="email_size">以字元數定義輸入框尺寸</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="email" size=""></span>
+                            <div class="o-hint">適用的 input 類型：text、search、tel、url、email、password</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="email" name="email_size" id="email_size" size="6" placeholder="size='6'">
+                        <input type="email" name="email_size2" id="email_size2" size="24" placeholder="size='24'" style="margin-left: 8px;">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <!-- 提供預設值列表 list-->
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="email_lists">提供預設值列表</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="email" list=""></span>
+                            <div class="o-hint">透過 list="" 指定相同 id 之 &lt;datalist> 元素</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="email" name="email_lists" id="email_lists" class="o-inpbox" list="defaultEmails">
+                        <datalist id="defaultEmails">
+                            <option value="abn@mi6.defence.gov.uk">
+                            <option value="jbond007@mi6.defence.gov.uk">
+                            <option value="jbourne@unknown.net">
+                            <option value="nfury@shield.org">
+                            <option value="tony@starkindustries.com">
+                            <option value="hulk@grrrrrrrr.arg">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myInput");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
+</html>
