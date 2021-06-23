@@ -116,7 +116,7 @@
                         <label for="psw_dis">禁用</label>
                         <div class="l-hint">
                             <span class="o-hint"> &lt;input type="text" disabled></span>
-                            <div class="o-hint">被禁用的input 元素是無法使用和無法點擊的。</div>
+                            <div class="o-hint">無法使用與點擊的</div>
                         </div>
                     </div>
                     <div class="c-form__cnt">
@@ -129,13 +129,32 @@
             <form action="/action_page.php">
                 <div class="c-form">
                     <div class="c-form__tit">
-                        <label for="psw_mode">指定輸入模式</label>
+                        <label for="psw_mode">指定輸入模式：numeric</label>
                         <div class="l-hint">
                             <span class="o-hint"> &lt;input type="text" inputmode=""></span>
+                            <div class="o-hint">預設為 text，有 decimal, numeric, tel, search, email, url</div>
                         </div>
                     </div>
                     <div class="c-form__cnt">
                         <input type="text" name="psw_mode" id="psw_mode" class="o-inpbox" inputmode="numeric" placeholder="指定輸入模式為數字">
+                    </div>
+                </div>
+                <div class="l-btn">
+                    <button class="o-btn">送出</button>
+                </div>
+            </form>
+            <br>
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label for="psw_mode2">指定輸入模式：tel</label>
+                        <div class="l-hint">
+                            <span class="o-hint"> &lt;input type="text" inputmode=""></span>
+                            <div class="o-hint">預設為 text，有 decimal, numeric, tel, search, email, url</div>
+                        </div>
+                    </div>
+                    <div class="c-form__cnt">
+                        <input type="password" name="psw_mode2" id="psw_mode2" class="o-inpbox" inputmode="tel" placeholder="指定輸入模式 tel">
                     </div>
                 </div>
                 <div class="l-btn">
