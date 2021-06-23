@@ -413,23 +413,12 @@ textarea::placeholder {
 }
 
 .o-selectBox {
-  position: relative;
-}
-
-.o-selectBox::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  display: block;
-  width: 16px;
-  height: 16px;
-  background: url() no-repeat center center;
-}
-
-.o-selectBox__input {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 12px;
   color: #818a91;
   border: 1px solid #ced4da;
+  border-radius: 4px;
   background: #fff;
 }
 
@@ -511,5 +500,14 @@ textarea::placeholder {
 
 .l-hint {
   margin: 4px;
+}
+
+.c-list__item {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.c-list__item:hover {
+  color: chocolate;
 }
 /*# sourceMappingURL=main.min.css.map */
