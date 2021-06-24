@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>aria</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <section>
+                <a href="#">Google</a>
+                <a href="#" aria-label="Hello World">Google</a>
+                <button aria-label="Main Menu" class="o-btn">≡</button>
+            </section>
+            <br>
+            <form action="/action_page.php">
+                <div class="c-form">
+                    <div class="c-form__tit">
+                        <label>
+                            <span>User Name</span>
+                            <input type="text" aria-describedby="errMsg" class="o-inpbox">
+                        </label>
+                    </div>
+                    <div class="c-form__cnt">
+                        <span id="errMsg" style="display:none">Please check your user name</span>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div>
+                <span id="lastOne">最後一件！</span>
+                <button type="button" aria-labelledby="lastOne chartBtn" id="chartBtn" class="o-btn">加入購物車</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
