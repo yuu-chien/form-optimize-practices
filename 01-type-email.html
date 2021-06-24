@@ -36,39 +36,6 @@
                 </div>
             </form>
             <br>
-            <!-- 必須填寫 -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="email_req">必須填寫</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="email" required></span>
-                        </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="email" name="email_req" id="email_req" class="o-inpbox" required>
-                    </div>
-                </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
-            <br>
-            <!-- 不可修改 -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="email_only">不可修改</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="email" readonly></span>
-                        </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="email" name="email_only" id="email_only" class="o-inpbox" readonly>
-                    </div>
-                </div>
-            </form>
-            <br>
             <!-- 可輸入多筆 -->
             <form action="/action_page.php">
                 <div class="c-form">
@@ -115,6 +82,7 @@
                         <label for="email_length">定義至多／至少輸入幾個字元</label>
                         <div class="l-hint">
                             <span class="o-hint"> &lt;input type="email" minlength="" maxlength=""></span>
+                            <div class="o-hint">此範例展示至少 6 個字元；至多 20 個字元</div>
                         </div>
                     </div>
                     <div class="c-form__cnt">
