@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./content/favicon.ico" />
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>通用屬性</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <!-- 必須填寫 required -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：required</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="text" required></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">boolean​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">適用的 input 類型：text、search、url、tel、email、password、date pickers、number、checkbox、radio、file</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_req">必須填寫</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="text" name="attr_req" id="attr_req" class="o-inpbox" required>
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 唯讀 readonly -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：readonly</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="text" value="try to copy" readonly></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">boolean</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">無法修改，使用者仍可用 tab 鍵切換並複製內容​​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">提交表單時會將值一起送出​​</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_readonly">唯讀</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="text" name="attr_readonly" id="attr_readonly" class="o-inpbox" value="try to copy" readonly>
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 禁用 disabled  -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：disabled</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="text" value="try to copy" disabled></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">boolean</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">無法點選與修改​​</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_disabled">禁用</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="text" name="attr_disabled" id="attr_disabled" class="o-inpbox" value="try to copy" disabled>
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 定義至多／至少輸入幾個字元 minlength maxlength -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：minlength、maxlength</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <ul class="c-list">
+                        <li class="c-list__item">
+                            <span class="o-hint"> &lt;input type="text" minlength="6" maxlength="10"></span>
+                        </li>
+                        <li class="c-list__item">
+                            <span class="o-hint">number</span>
+                        </li>
+                        <li class="c-list__item">
+                            <span class="o-hint">IE 11 不支援 minlength</span>
+                        </li>
+                        <li class="c-list__item">
+                            <span class="o-hint">適用的 input 類型：text、email、search、password、tel、url</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_length">定義至多／至少輸入幾個字元</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="text" name="attr_length" id="attr_length" class="o-inpbox" minlength="6" maxlength="10" placeholder="至少 6 個字元；至多 10 個字元">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 最小值與最大值 min、max -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：min、max</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <ul class="c-list">
+                        <li class="c-list__item">
+                            <span class="o-hint"> &lt;input type="number" min="-100" max="100"></span>
+                        </li>
+                        <li class="c-list__item">
+                            <span class="o-hint">string</span>
+                        </li>
+                        <li class="c-list__item">
+                            <span class="o-hint">適用的 input 類型：number、range、date、datetime、datetime-local、month、time、week</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_minmax">最小值與最大值</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="number" name="attr_minmax" id="attr_minmax" class="o-inpbox" min="-100" max="100" placeholder="最小值 -100，最大值 100">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 增減區間 step -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：step</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <ul class="c-list">
+                        <li class="c-list__item">
+                            <span class="o-hint"> &lt;input type="number" step="10"></span>
+                        </li>
+                        <li class="c-list__item">
+                            <span class="o-hint">string</span>
+                        </li>
+                        <li class="c-list__item">
+                            <span class="o-hint">適用的 input 類型：number、range、date、datetime、datetime-local、month、time、week</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_step">增減區間</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="number" name="attr_step" id="attr_step" class="o-inpbox" step="10" placeholder="區間為 10">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 輸入多筆 multiple -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：multiple</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="email" multiple></span>
+                                <span class="o-hint"> &lt;input type="file" multiple></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">boolean​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">以逗號分隔，逗號後可加上空白</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">適用的 input 類型：email、file</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_multiple_email">輸入多筆（email）</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="email" name="attr_multiple_email" id="attr_multiple_email" class="o-inpbox" multiple>
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_multiple_file">輸入多筆（file）</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="file" name="attr_multiple_file" id="attr_multiple_file" class="o-inpbox" multiple>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 字元數定義輸入框尺寸 size -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：size</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="text" size="6"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">number</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">若 type 類型為 passwordand、text，其以 em 為單位；其他則以 pixels 為單位</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">CSS 寬度權重高於此屬性</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">適用的 input 類型：email、password、tel、text</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">由於使用 CSS RESET，與實際尺寸不大符合。範例可參考 w3schools </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_size6">字元數定義輸入框尺寸</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="text" name="attr_size6" id="attr_size6" size="6">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 自訂驗證規則 pattern -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>通用屬性：pattern</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="至少 8 個字元，並必須包括 1 個數字、大小寫字母各一個👀"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">regexp</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">適用的 input 類型：text、search、tel、url、email、password</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">可將驗證規則寫在 title 中作為輔助提示</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">主要用於增進 UX 體驗，驗證資料仍需交由伺服器端處理較安全</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="attr_pattern">自訂驗證規則：至少八個字元，並必須包括一個數字、一個大寫字母、一個小寫字母</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="text" name="attr_pattern" id="attr_pattern" class="o-inpbox" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="至少 8 個字元，並必須包括 1 個數字、大小寫字母各一個👀">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
