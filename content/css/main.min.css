@@ -355,12 +355,12 @@ iframe {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  width: 120px;
-  padding: 8px 12px;
+  width: 80px;
+  padding: 4px 8px;
   color: #fff;
   text-align: center;
   background: #e2492f;
-  border-radius: 6px;
+  border-radius: 4px;
   border: none;
   -webkit-transition: .3s;
   transition: .3s;
@@ -501,6 +501,22 @@ textarea::placeholder {
   margin-left: 4px;
 }
 
+.l-grid__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.l-grid--2col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.l-grid--2col .l-grid__item {
+  width: 50%;
+  padding: 0 8px;
+}
+
 .o-hint {
   font-size: 14px;
   color: #aaa;
@@ -512,10 +528,5 @@ textarea::placeholder {
 
 .c-list__item {
   margin-top: 8px;
-  font-weight: bold;
-}
-
-.c-list__item:hover {
-  color: chocolate;
 }
 /*# sourceMappingURL=main.min.css.map */
