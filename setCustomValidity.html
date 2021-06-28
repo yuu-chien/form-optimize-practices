@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./content/favicon.ico" />
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>修改驗證提示</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>修改驗證提示文字</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="email"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">使用 validityState 判斷有效性狀態（此範例僅演示 typeMismatch 狀態）</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">setCustomValidity 方法修改文字​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">原預設規則會直接被覆寫，需重新自定義嚴謹的驗證規則</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="email_demo">一般 email 驗證</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="email" name="email_demo" id="email_demo" class="o-inpbox">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                    <form class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="verify_email">validity.typeMismatch</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="email" name="verify_email" id="verify_email" class="o-inpbox">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn" id="verify_email_btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>關閉預設瀏覽器提示</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item"></div>
+                <div class="l-grid__item">
+                    <form class="l-form" id="verify_email_style_form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="email_demo_2">一般 email 驗證</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="email" name="email_demo_2" id="email_demo_2" class="o-inpbox">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    let $verify_email = document.querySelector("#verify_email");
+    let $verify_email_btn = document.querySelector("#verify_email_btn");
+
+    $verify_email_btn.addEventListener("click", function() {
+        if ($verify_email.validity.typeMismatch) {
+            $verify_email.setCustomValidity("嗨，請輸入正確的 Email 格式喔😱");
+        }
+    });
+
+    document.querySelector("#verify_email_style_form").addEventListener("invalid", function(e) {
+        e.preventDefault();
+    }, true);
+
+    // $verify_email.addEventListener("input", function() {
+    //     if ($verify_email.validity.typeMismatch) {
+    //         $verify_email.setCustomValidity("嗨，請輸入正確的 Email 格式喔😱");
+    //     }
+    // })
+
+</script>
+
+</html>
