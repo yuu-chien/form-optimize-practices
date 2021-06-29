@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./content/favicon.ico" />
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>inputmode</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>inputmode 輸入模式</h2>
+                </div>
+            </div>
+            <div class="l-list">
+                <ul class="c-list">
+                    <li class="c-list__item">
+                        <span class="o-hint">非驗證，僅為提示瀏覽器顯示哪種鍵盤​</span>
+                    </li>
+                    <li class="c-list__item">
+                        <span class="o-hint">適用的 input 類型：text、password、email、url​</span>
+                    </li>
+                    <li class="c-list__item">
+                        <span class="o-hint">可能的值為：text、decimal、numeric、search、email、url、tel​​</span>
+                    </li>
+                    <li class="c-list__item">
+                        <span class="o-hint">支援度不佳</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="inputmode_numeric">inputmode="numeric"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="text" inputmode="numeric"></span>
+                                <input type="text" name="inputmode_numeric" id="inputmode_numeric" class="o-inpbox" inputmode="numeric">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_number">type="number"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="number"></span>
+                                <input type="number" name="demo_number" id="demo_number" class="o-inpbox">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="inputmode_decimal">inputmode="decimal"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="text" inputmode="decimal"></span>
+                                <input type="text" name="inputmode_decimal" id="inputmode_decimal" class="o-inpbox" inputmode="decimal">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_number_2">type="number"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="number"></span>
+                                <input type="number" name="demo_number_2" id="demo_number_2" class="o-inpbox">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="inputmode_tel">inputmode="tel"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="text" inputmode="tel"></span>
+                                <input type="text" name="inputmode_tel" id="inputmode_tel" class="o-inpbox" inputmode="tel">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="inputmode_url">inputmode="url"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="text" inputmode="url"></span>
+                                <input type="text" name="inputmode_url" id="inputmode_url" class="o-inpbox" inputmode="url">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="inputmode_email">inputmode="email"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="text" inputmode="email"></span>
+                                <input type="text" name="inputmode_email" id="inputmode_email" class="o-inpbox" inputmode="email">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="inputmode_search">inputmode="search"</label>
+                            </div>
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="text" inputmode="search"></span>
+                                <input type="text" name="inputmode_search" id="inputmode_search" class="o-inpbox" inputmode="search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
