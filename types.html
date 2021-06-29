@@ -5,177 +5,350 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./content/favicon.ico" />
     <link rel="stylesheet" href="./content/css/main.min.css">
-    <title>Document</title>
+    <title>types</title>
 </head>
 
 <body>
     <div class="l-container">
         <div class="l-container__cnt">
+            <!-- Email -->
             <div class="l-header">
                 <div class="l-header__cnt">
-                    <h1>Type 定義帶有語意的 &lt;input> 型態</h1>
+                    <h2>type="email"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="email"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">用於輸入電子信箱​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">預設之進行驗證的正則表達式：/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}​
+                                    [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">只能驗證輸入的資料是否符合格式，無法驗證其電子信箱是否存在</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_email">Email</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="email" name="demo_email" id="demo_email" class="o-inpbox">
+                            </div>
+                        </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <br>
-            <!-- Email -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="email">電子信箱</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="email"></span>
-                        </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="email" name="email" id="email" class="o-inpbox">
-                    </div>
-                </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
-            <br>
             <!-- Password -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="psw">密碼</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="password"></span>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="password"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="password"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">用於輸入密碼​，輸入值會以隱碼呈現​</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_password">密碼</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="password" name="demo_password" id="demo_password" class="o-inpbox">
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="password" name="psw" id="psw" class="o-inpbox">
-                    </div>
+                    </form>
                 </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
-            <br>
-            <!-- Tel -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="phone">電話</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="tel"></span>
-                        </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" class="o-inpbox">
-                    </div>
-                </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
+            </div>
             <br>
             <!-- Number -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="quantity">數值</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="number"></span>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="number"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="number"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">輸入欄位右側會有上下兩個箭頭以供增加或減少數值，預設區間為 1​</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_number">數字</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="number" name="demo_number" id="demo_number" class="o-inpbox">
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="number" id="quantity" name="quantity" class="o-inpbox">
+                    </form>
+                </div>
+            </div>
+            <br>
+            <!-- Tel -->
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="tel"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="tel"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">用於輸入電話號碼​​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">無預設的驗證格式，因為世界上的國家和地區電話號碼規則不盡相同</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">與 number 主要差異於動態鍵盤的呈現​</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_tel">電話</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="tel" name="demo_tel" id="demo_tel" class="o-inpbox">
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
             <br>
             <!-- Url -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="url">網址</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="url"></span>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="url"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="url"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">用於輸入網址​​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">驗證規則：http:// 或 https:// 開頭，並接至少一個字元</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">只能驗證輸入的資料是否符合格式，無法驗證其電子信箱是否存在​</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_url">網址</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="url" name="demo_url" id="demo_url" class="o-inpbox">
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="url" id="url" name="url" class="o-inpbox">
-                    </div>
+                        <div class="l-btn">
+                            <button class="o-btn">送出</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
+            </div>
             <br>
             <!-- Date -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="date">日期</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="date"></span>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="date"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="date"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">IE 11 不支援​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">預設情況下，不會驗證超過格式的輸入值​​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">根據瀏覽器設定的語言不同，顯示格式也會不一樣。例如繁體中文的格式為「年/月/日」，英文則為「mm/dd/yyyy」</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_date">日期（年 / 月 / 日）</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="date" name="demo_date" id="demo_date" class="o-inpbox">
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="date" id="date" name="date" class="o-inpbox">
-                    </div>
+                    </form>
                 </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
+            </div>
             <br>
             <!-- Date & Time -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="datetime">日期與時間</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="datetime-local"></span>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="datetime-local"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="datetime-local"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">Firefox 與 IE 11 不支援</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_datetime_local">日期（年 / 月 / 日 / 時 / 分）</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="datetime-local" name="demo_datetime_local" id="demo_datetime_local" class="o-inpbox">
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="datetime-local" id="datetime" name="datetime" class="o-inpbox">
-                    </div>
+                    </form>
                 </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
+            </div>
             <br>
             <!-- File -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="file_demo">上傳檔案</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="file"></span>
-                        </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="file" id="file_demo" name="file_demo" class="o-inpbox">
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="file"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="file"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">HTMLInputElement.files 之屬性（name、lastModified、size、type）可用於得知文件名稱、大小、最後修改時間、MIME 類型</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">accept 屬性可用於指定上傳檔案格式</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </form>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_file">上傳檔案</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="file" name="demo_file" id="demo_file" class="o-inpbox">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <br>
             <!-- Color -->
-            <form action="/action_page.php">
-                <div class="c-form">
-                    <div class="c-form__tit">
-                        <label for="color_demo">色彩選擇器</label>
-                        <div class="l-hint">
-                            <span class="o-hint"> &lt;input type="color"></span>
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>type="color"</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="color"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">IE 11 不支援​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">不得為空值​​；預設色為 #000000​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">​只能輸入十六進制格式，無法處理帶透明度的色碼</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="demo_color">色彩選擇器</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="color" name="demo_color" id="demo_color" class="o-inpbox">
+                            </div>
                         </div>
-                    </div>
-                    <div class="c-form__cnt">
-                        <input type="color" id="color_demo" name="color_demo" class="o-inpbox">
-                    </div>
+                    </form>
                 </div>
-                <div class="l-btn">
-                    <button class="o-btn">送出</button>
-                </div>
-            </form>
+            </div>
             <br>
         </div>
     </div>
