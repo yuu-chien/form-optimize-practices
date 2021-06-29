@@ -284,10 +284,6 @@
                     <div class="l-hint">
                         <ul class="c-list">
                             <li class="c-list__item">
-                                <span class="o-hint"> &lt;input type="email" multiple></span>
-                                <span class="o-hint"> &lt;input type="file" multiple></span>
-                            </li>
-                            <li class="c-list__item">
                                 <span class="o-hint">boolean​</span>
                             </li>
                             <li class="c-list__item">
@@ -305,7 +301,8 @@
                             <div class="c-form__tit">
                                 <label for="attr_multiple_email">輸入多筆（email）</label>
                             </div>
-                            <div class="c-form__cnt">
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="email" multiple></span>
                                 <input type="email" name="attr_multiple_email" id="attr_multiple_email" class="o-inpbox" value="me@example.org, you@example.org" multiple>
                             </div>
                         </div>
@@ -318,7 +315,8 @@
                             <div class="c-form__tit">
                                 <label for="attr_multiple_file">輸入多筆（file）</label>
                             </div>
-                            <div class="c-form__cnt">
+                            <div class="c-form__cnt c-form__cnt--v">
+                                <span class="o-hint"> &lt;input type="file" multiple></span>
                                 <input type="file" name="attr_multiple_file" id="attr_multiple_file" class="o-inpbox" multiple>
                             </div>
                         </div>
