@@ -546,6 +546,18 @@ textarea::placeholder {
   margin-bottom: 8px;
 }
 
+.c-list--disc {
+  list-style: disc;
+}
+
+.c-list--disc .c-list__item {
+  margin-left: 16px;
+}
+
+.c-list--disc .c-list__item:hover {
+  color: #e2492f;
+}
+
 .l-list {
   margin: 16px 0;
 }

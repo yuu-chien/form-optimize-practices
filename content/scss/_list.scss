@@ -2,6 +2,20 @@
     &__item {
         margin-bottom: 8px;
     }
+
+    &--disc {
+        list-style: disc;
+    }
+
+    &--disc & {
+        &__item {
+            margin-left: 16px;
+
+            &:hover {
+                color: #e2492f;
+            }
+        }
+    }
 }
 
 .l-list {
