@@ -1,4 +1,9 @@
 .l-grid {
+
+    &+& {
+        margin-top: 16px;
+    }
+
     &__item {
         box-sizing: border-box;
     }
@@ -11,6 +16,18 @@
         &__item {
             width: 50%;
             padding: 0 8px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        &--2col {
+            flex-direction: column;
+        }
+
+        &--2col & {
+            &__item {
+                width: 100%;
+            }
         }
     }
 }
