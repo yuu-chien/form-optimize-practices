@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./content/favicon.ico" />
+    <link rel="stylesheet" href="./content/css/main.min.css">
+    <title>e.g. for date</title>
+</head>
+
+<body>
+    <div class="l-container">
+        <div class="l-container__cnt">
+            <div class="l-header">
+                <div class="l-header__cnt">
+                    <h2>日期選擇常見的方式</h2>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="text" placeholder="DD/MM/YYYY" pattern="\d{1,2}/\d{1,2}/\d{4}"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">使用者對年、月、日的認知不同（年 / 月 / 日）（月 / 日 / 年）（日 / 月 / 年）</span>
+                                <!-- <span class="o-hint">範例中輸入的有可能為 2008 年七月十號、2010 年八月七號、2010 年七月八號</span> -->
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">​月份與日期若非十位數，是否補零</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form action="#" class="l-form">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="date_demo_1">日期選擇：只輸入字元</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="text" name="date_demo_1" id="date_demo_1" placeholder="DD/MM/YYYY" pattern="\d{1,2}/\d{1,2}/\d{4}" class="o-inpbox">
+                            </div>
+                            <div class="l-btn">
+                                <button class="o-btn">送出</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint">日期選項最多 31 個、月份選項最多 12 個、年份目前最多 117 個</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">​滑動選項時，可能造成使用者年紀很老的負面體驗​</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form class="l-form l-form--flex">
+                        <div class="l-form__item">
+                            <div class="c-form">
+                                <div class="c-form__tit">
+                                    <label for="date_demo_2_d">日期選擇：日下拉</label>
+                                </div>
+                                <div class="c-form__cnt">
+                                    <select name="date_demo_2_d" id="date_demo_2_d" class="o-selectBox">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-form__item">
+                            <div class="c-form">
+                                <div class="c-form__tit">
+                                    <label for="date_demo_2_m">日期選擇：月下拉</label>
+                                </div>
+                                <div class="c-form__cnt">
+                                    <select name="date_demo_2_m" id="date_demo_2_m" class="o-selectBox">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="l-form__item">
+                            <div class="c-form">
+                                <div class="c-form__tit">
+                                    <label for="date_demo_2_y">日期選擇：年下拉</label>
+                                </div>
+                                <div class="c-form__cnt">
+                                    <select name="date_demo_2_y" id="date_demo_2_y" class="o-selectBox">
+                                        <option>2021</option>
+                                        <option>2020</option>
+                                        <option>2019</option>
+                                        <option>2018</option>
+                                        <option>2017</option>
+                                        <option>2016</option>
+                                        <option>2015</option>
+                                        <option>2014</option>
+                                        <option>2013</option>
+                                        <option>2012</option>
+                                        <option>2011</option>
+                                        <option>2010</option>
+                                        <option>2009</option>
+                                        <option>2008</option>
+                                        <option>2007</option>
+                                        <option>2006</option>
+                                        <option>2005</option>
+                                        <option>2004</option>
+                                        <option>2003</option>
+                                        <option>2002</option>
+                                        <option>2001</option>
+                                        <option>2000</option>
+                                        <option>1999</option>
+                                        <option>1998</option>
+                                        <option>1997</option>
+                                        <option>1996</option>
+                                        <option>1995</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>中略</option>
+                                        <option>1910</option>
+                                        <option>1909</option>
+                                        <option>1908</option>
+                                        <option>1907</option>
+                                        <option>1906</option>
+                                        <option>1905</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="l-grid l-grid--2col">
+                <div class="l-grid__item">
+                    <div class="l-hint">
+                        <ul class="c-list">
+                            <li class="c-list__item">
+                                <span class="o-hint"> &lt;input type="date"></span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">根據瀏覽器設定的語言不同，顯示格式也會不一樣。例如繁體中文的格式為「年/月/日」，英文則為「mm/dd/yyyy」​</span>
+                            </li>
+                            <li class="c-list__item">
+                                <span class="o-hint">​無法預期使用者的點選方式​</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-grid__item">
+                    <form class="l-form l-form--flex">
+                        <div class="c-form">
+                            <div class="c-form__tit">
+                                <label for="date_demo_3">日期選擇器</label>
+                            </div>
+                            <div class="c-form__cnt">
+                                <input type="date" name="date_demo_3" id="date_demo_3" class="o-inpbox">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

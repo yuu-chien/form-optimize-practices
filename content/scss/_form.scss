@@ -73,6 +73,17 @@ textarea {
     &+& {
         margin-top: 16px;
     }
+
+    &--flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &--flex & {
+        &__item {
+            margin-right: 16px;
+        }
+    }
 }
 
 .c-radioBox,

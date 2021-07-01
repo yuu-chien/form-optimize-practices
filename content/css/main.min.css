@@ -472,6 +472,19 @@ textarea::placeholder {
   margin-top: 16px;
 }
 
+.l-form--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-form--flex .l-form__item {
+  margin-right: 16px;
+}
+
 .c-radioBox,
 .c-checkBox {
   display: -webkit-box;
